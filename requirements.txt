@@ -3,4 +3,3 @@ opencv-python-headless
 mediapipe
 streamlit
 streamlit_webrtc
-libgl1-mesa-glx
