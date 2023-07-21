@@ -132,7 +132,9 @@ class ProcessFrame:
                     self.state_tracker['IMPROPER_SQUAT'] = 0
                     display_inactivity = True
 
-                cv2.circle(frame, nose_coord, 3, self.COLORS['white'], -1)
+                
+
+                cv2.circle(frame, nose_coord, 40, self.COLORS['green'], -1)
                 #cv2.circle(frame, left_shldr_coord, 3, self.COLORS['white'], -1)
                 #cv2.circle(frame, right_shldr_coord, 3, self.COLORS['white'], -1)
                 
@@ -230,6 +232,7 @@ class ProcessFrame:
                 draw_dotted_line(frame, hip_coord, start=hip_coord[1]-80, end=hip_coord[1]+20, line_color=self.COLORS['blue'])
 
 
+                cv2.circle(frame, nose_coord, 40, self.COLORS['green'], -1)
 
                 # -------
                 knee_vertical_angle = find_angle(hip_coord, np.array([knee_coord[0], 0]), knee_coord)
